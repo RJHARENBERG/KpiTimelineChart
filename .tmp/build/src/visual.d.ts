@@ -1,23 +1,21 @@
-import "./../style/visual.less";
 import powerbi from "powerbi-visuals-api";
 import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
 import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
 import IVisual = powerbi.extensibility.visual.IVisual;
-import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
-import VisualObjectInstance = powerbi.VisualObjectInstance;
-import VisualObjectInstanceEnumerationObject = powerbi.VisualObjectInstanceEnumerationObject;
+/**Import css style*/
+import "./../style/visual.less";
+/**Omdat standaard Power BI TypeScript-instellingen niet worden herkend React tsx-bestanden
+ * Als u het onderdeel wilt weergeven, voegt u het HTML-doelelement toe aan visual.ts. Dit element bevindt zich
+ * HTMLElement in VisualConstructorOptions, dat wordt doorgegeven aan de constructor.*/
 export declare class Visual implements IVisual {
     private target;
-    private updateCount;
-    private settings;
-    private textNode;
+    private reactRoot;
+    private viewport;
     constructor(options: VisualConstructorOptions);
-    update(options: VisualUpdateOptions): void;
-    private static parseSettings;
-    /**
-     * This function gets called for each of the objects defined in the capabilities files and allows you to select which of the
-     * objects and properties you want to expose to the users in the property pane.
+    /**Uw visual instellen op het ontvangen van gegevens
      *
-     */
-    enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstance[] | VisualObjectInstanceEnumerationObject;
+     * Visuals ontvangen gegevens als argument van de update methode. In deze sectie werkt u deze
+     * methode bij om gegevens te ontvangen.*/
+    update(options: VisualUpdateOptions): void;
+    private clear;
 }

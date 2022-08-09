@@ -6,28 +6,13 @@
             "kind": "Grouping"
         },
         {
-            "displayName": "scope",
-            "name": "scope",
+            "displayName": "month",
+            "name": "month",
             "kind": "Measure"
         },
         {
-            "displayName": "ISO",
-            "name": "ISO",
-            "kind": "Measure"
-        },
-        {
-            "displayName": "status red",
-            "name": "status red",
-            "kind": "Measure"
-        },
-        {
-            "displayName": "status yellow",
-            "name": "status yellow",
-            "kind": "Measure"
-        },
-        {
-            "displayName": "status green",
-            "name": "status green",
+            "displayName": "year",
+            "name": "year",
             "kind": "Measure"
         }
     ],
@@ -42,19 +27,10 @@
                         "bind": {"to": "id"}
                     },
                     {
-                        "bind": {"to": "scope"}
+                        "bind": {"to": "month"}
                     },
                     {
-                        "bind": {"to": "ISO"}
-                    },
-                    {
-                        "bind": {"to": "status red"}
-                    },
-                    {
-                        "bind": {"to": "status yellow"}
-                    },
-                    {
-                        "bind": {"to": "status green"}
+                        "bind": {"to": "year"}
                     }
                 ]
             }

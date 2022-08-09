@@ -65,38 +65,39 @@ export class KpiTimelineChart extends React.Component<{}> {
 
         return (
             <>
-                <div className="container" style={style}>
+                <div className="container">
                     <div className="wrapper">
-                        <h1>Ranking</h1>
-                        <div className="ranking-card">
+                        <h1>Timeline</h1>
+                        <p>Kpi development (last twelve months)</p>
+                        <div className="timeline-scale">
+                            <div className="number-of-kpi">
+                                <div className="total-kpi">{RankingData.length}</div>
+                                <div className="half-kpi">{RankingData.length / 2}</div>
+                                <div className="zero-kpi">0</div>
+                            </div>
                             {RankingData.map((ranking) => {
                                 return (
-                                    <div className="countries-card">
-                                        <div className="scope-label">
-                                            {ranking[2]}
-                                            <div className="yellow-rank-number">
-                                                {ranking[4]}
-                                            </div>
+                                    <div className="ranking-kolom">
+                                        <div className="kpi-status-kolom">
+                                            {RankingData.map((kpi) => {
+                                                return (
+                                                    <div className={`kpi-square theme-green-top`}/>
+                                                )
+                                            })}
+                                            {RankingData.map((kpi) => {
+                                                return (
+                                                    <div className={`kpi-square theme-yellow-top`}/>
+                                                )
+                                            })}
+                                            {RankingData.map((kpi) => {
+                                                return (
+                                                    <div className={`kpi-square theme-red-top`}/>
+                                                )
+                                            })}
                                         </div>
-                                        <div className="balance-card">
-                                            <h2>{ranking[1]}</h2>
-                                            <div className="kpi-card">
-                                                {RankingData.map((kpi) => {
-                                                    return (
-                                                        <div className={`kpi-square theme-red-top`}/>
-                                                    )
-                                                })}
-                                                {RankingData.map((kpi) => {
-                                                    return (
-                                                        <div className={`kpi-square theme-yellow-top`}/>
-                                                    )
-                                                })}
-                                                {RankingData.map((kpi) => {
-                                                    return (
-                                                        <div className={`kpi-square theme-green-top`}/>
-                                                    )
-                                                })}
-                                            </div>
+                                        <div className="date-container">
+                                            <h2 className="month">{ranking[1]}</h2>
+                                            <p className="year">{ranking[2]}</p>
                                         </div>
                                     </div>
                                 )
@@ -105,6 +106,7 @@ export class KpiTimelineChart extends React.Component<{}> {
                     </div>
                 </div>
             </>
+
         )
     }
 }
