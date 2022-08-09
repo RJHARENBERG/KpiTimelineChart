@@ -497,8 +497,8 @@ class KpiTimelineChart extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Kpi development (last twelve months)"),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "timeline-scale" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "number-of-kpi" },
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "total-kpi" }, RankingData.length),
-                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "half-kpi" }, RankingData.length / 2),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "total-kpi" }, RankingData.length + RankingData.length + RankingData.length),
+                            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "half-kpi" }, (RankingData.length + RankingData.length + RankingData.length) / 2),
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "zero-kpi" }, "0")),
                         RankingData.map((ranking) => {
                             return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "ranking-kolom" },
