@@ -65,14 +65,18 @@ export class KpiTimelineChart extends React.Component<{}> {
 
         return (
             <>
-                <div className="container">
+                <div className="container" style={style}>
                     <div className="wrapper">
-                        <h1>Timeline</h1>
-                        <p>Kpi development (last twelve months)</p>
+                        <div className="header">
+                            <h1>Timeline</h1>
+                            <p>Kpi development (last twelve months)</p>
+                        </div>
                         <div className="timeline-scale">
                             <div className="number-of-kpi">
-                                <div className="total-kpi">{RankingData.length + RankingData.length + RankingData.length}</div>
-                                <div className="half-kpi">{(RankingData.length+ RankingData.length + RankingData.length) / 2}</div>
+                                <div
+                                    className="total-kpi">{RankingData.length + RankingData.length + RankingData.length}</div>
+                                <div
+                                    className="half-kpi">{(RankingData.length + RankingData.length + RankingData.length) / 2}</div>
                                 <div className="zero-kpi">0</div>
                             </div>
                             {RankingData.map((ranking) => {

@@ -491,10 +491,11 @@ class KpiTimelineChart extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
         console.log(RankingData);
         const style = { width: size, height: size };
         return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "container" },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "container", style: style },
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "wrapper" },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Timeline"),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Kpi development (last twelve months)"),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "header" },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Timeline"),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Kpi development (last twelve months)")),
                     react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "timeline-scale" },
                         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "number-of-kpi" },
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "total-kpi" }, RankingData.length + RankingData.length + RankingData.length),
