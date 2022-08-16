@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "author": {"name":"Reinard Harenberg","email":"reinardharenberg@gmail.com"},
+    "resources": [
+        {
+            "resourceId": "rId0",
+            "sourceType": 5,
+            "file": "resources/kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06.pbiviz.json"
+        }
+    ],
+    "visual": {"name":"kpiTimelineChart","displayName":"KpiTimelineChart","guid":"kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06","visualClassName":"Visual","version":"1.0.0","description":"kpi timeline","supportUrl":"no thanks","gitHubUrl":""},
+    "metadata": {
+        "pbivizjson": {
+            "resourceId": "rId0"
+        }
+    }  
+}
