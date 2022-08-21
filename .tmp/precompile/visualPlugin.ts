@@ -5,8 +5,8 @@ import VisualConstructorOptions = powerbiVisualsApi.extensibility.visual.VisualC
 import DialogConstructorOptions = powerbiVisualsApi.extensibility.visual.DialogConstructorOptions;
 var powerbiKey: any = "powerbi";
 var powerbi: any = window[powerbiKey];
-var kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06: IVisualPlugin = {
-    name: 'kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06',
+var kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06_DEBUG: IVisualPlugin = {
+    name: 'kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06_DEBUG',
     displayName: 'KpiTimelineChart',
     class: 'Visual',
     apiVersion: '3.8.0',
@@ -27,6 +27,6 @@ var kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06: IVisualPlugin = {
 if (typeof powerbi !== "undefined") {
     powerbi.visuals = powerbi.visuals || {};
     powerbi.visuals.plugins = powerbi.visuals.plugins || {};
-    powerbi.visuals.plugins["kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06"] = kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06;
+    powerbi.visuals.plugins["kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06_DEBUG"] = kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06_DEBUG;
 }
-export default kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06;
+export default kpiTimelineChart1B602700AB3F4033A60525DA22A0AD06_DEBUG;
